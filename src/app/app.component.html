@@ -1,7 +1,7 @@
 <p >
   {{name}} 
 </p>
-<label for="select">Seleccionado un nombre: </label>
+<label for="select">Selecciona tu nombre: </label>
 <select [(ngModel)]="seleccionado"  (change)=busca() id="select">
   <option *ngFor="let dato of datos" [value]="dato.id">
     {{dato.name}}
