@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SaludarComponent implements OnInit {
 
-  @Input() name;
+  @Input() persona;
 
   constructor() { }
 

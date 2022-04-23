@@ -1,4 +1,14 @@
-<p *ngIf="name">Hola, {{name.name}}</p>
+<div *ngIf="persona">
+<p >Hola, {{persona.name}}, estos son tus datos:</p>
+<table class="table table-success table-striped table-bordered">
+  <tbody>
+  <tr><td>username</td><td>{{persona.username}}</td></tr>
+  <tr><td>email</td><td>{{persona.email}}</td></tr>
+  <tr><td>phone</td><td>{{persona.phone}}</td></tr>
+  <tr><td>Company</td><td>{{persona.company.name}}</td></tr>
+  </tbody>
+</table>
 <p>
-{{name | json}}
+{{persona | json}}
 </p>
+</div>
