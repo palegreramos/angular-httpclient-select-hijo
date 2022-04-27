@@ -4,7 +4,7 @@
 </p>
 <label for="select">Selecciona tu nombre: </label>
 <select [(ngModel)]="seleccionado"  (change)=busca() id="select">
-  <option *ngFor="let dato of datos" [value]="dato.id">
+  <option *ngFor="let dato of datos" [ngValue]="dato.id">
     {{dato.name}}
   </option>
 </select>
