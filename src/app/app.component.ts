@@ -19,6 +19,7 @@ export class AppComponent {
   ngOnInit() {
     this.http.get<any>(this.url).subscribe((data) => {
       this.datos = data;
+      console.log(this.datos);
     });
   }
   busca() {
